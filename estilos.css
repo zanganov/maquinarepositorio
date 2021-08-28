@@ -6,18 +6,15 @@
 
 /*header + logo y menu general*/
 .header {
-  height: auto;
   width: auto;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   border-bottom: 9px double lightgoldenrodyellow;
 }
 
 .logo {
-  margin-top: 30px;
-  margin-bottom: 5px;
-  margin-left: 30px;
+  margin: 30px;
 }
 
 img.mqt {
@@ -30,7 +27,7 @@ img.mqt {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border: 5px double;
-  border-color: lightgoldenrodyellow;
+  border-color: yellow;
   border-radius: 50%;
 }
 
@@ -58,32 +55,28 @@ img.mqt {
   text-shadow: 5px 5px 10px ghostwhite;
 }
 
+.active1 {
+  background-color: palevioletred;
+  border-radius: 80%;
+}
+
 .sabemosTitulos {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
   height: auto;
-  margin-top: 100px;
+  width: 100%;
+  justify-content: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.navbar-toggler {
-  margin-left: 380px;
-  margin-bottom: 800px;
-  position: absolute;
-}
-
-.menubarra {
-  display: flex;
-  margin-top: 0px;
+.navbar-nav {
   margin-left: auto;
-  margin-right: 0px;
-  align-content: center;
-  height: 35px;
-  width: 580px;
-  text-align: center;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 150px;
 }
 
 .nav-link {
@@ -93,14 +86,12 @@ img.mqt {
   justify-content: center;
   font-family: "Special Elite", cursive;
   text-align: justify;
-  color: yellow;
 }
 
 ul {
   width: 550px;
   flex-wrap: nowrap;
   margin-right: 30px;
-  margin-top: 20px;
   display: flex;
   list-style-type: none;
 }
@@ -672,21 +663,38 @@ div.desc {
 }
 
 /*Video*/
-.v1 {
+/*.v1 {
+  height: 10px;
+  overflow: hidden;
+  padding-bottom: 330px;
+  padding-top: 30px;
+  padding-right: 0px;
+  width: 450px;
+  position: relative;
+  margin-left: 30px;
+  }
+
+.v1 iframe, .v1-responsive object, .v1-responsive embed {
+  height: 450px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 420px;
+}*/
+.v1-responsive {
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%;
   padding-top: 30px;
   position: relative;
-  margin-left: 30px;
 }
 
-.v1 iframe, .v1-responsive object, .v1-responsive embed {
-  height: 315px;
+.v1-responsive iframe, .v1-responsive object, .v1-responsive embed {
+  height: 80%;
   left: 0;
-  position: relative;
+  position: absolute;
   top: 0;
-  width: 420px;
+  width: 80%;
 }
 
 /*footer*/
