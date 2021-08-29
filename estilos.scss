@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/*header + logo y menu general*/
+/*header */
 .header {
   width: auto;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
@@ -14,6 +14,7 @@
   border-bottom: 9px double lightgoldenrodyellow;
 }
 
+///*logo y menu general*///
 .logo {
   margin: 30px;
 }
@@ -73,7 +74,6 @@ img.mqt {
   padding-bottom: 0px;
   margin-top: 0;
   }
-
 
 .nav-link {
   font-size: 22px;
@@ -242,7 +242,7 @@ ul li:hover ul {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
+///*Formulario contacto*//
 #nombre {
   font-size: 23px;
   font-family: "Special Elite", cursive;
@@ -347,7 +347,7 @@ ul li:hover ul {
   font-size: 23px;
   color: palevioletred;
 }
-
+//*Mapa y datos contacto*//
 #redes {
   margin: 30px;
   margin-left: 10px;
@@ -454,7 +454,7 @@ ul li:hover ul {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
+//*Galeria de guitarras*//
 div.gallery {
   margin: 4px;
   margin-left: 7px;
@@ -601,12 +601,13 @@ div.desc {
   background-size: cover;
   flex-wrap: wrap;
   }
-  .bloqueClases{
-    display: inline-block;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 600px;   
+
+ .bloqueClases{
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 600px;   
   }
 .container-fluid{
   width: 100%;
@@ -671,7 +672,7 @@ div.desc {
   text-transform: uppercase;
   color: yellow;
 } 
-/*Video*/
+//*Video*//
 
 .v1-responsive {
   height: 0;
@@ -691,8 +692,7 @@ div.desc {
   margin-left: 120px;
   flex-direction: row;
   border:2px double yellow;
-    
-}
+   }
 
 /*footer*/
 .footer {

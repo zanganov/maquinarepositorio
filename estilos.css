@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/*header + logo y menu general*/
+/*header */
 .header {
   width: auto;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
@@ -673,7 +673,6 @@ div.desc {
   color: yellow;
 }
 
-/*Video*/
 .v1-responsive {
   height: 0;
   overflow: hidden;
