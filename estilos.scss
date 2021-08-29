@@ -9,6 +9,7 @@
   width: auto;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   border-bottom: 9px double lightgoldenrodyellow;
 }
