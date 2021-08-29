@@ -55,10 +55,6 @@ img.mqt {
   text-shadow: 5px 5px 10px ghostwhite;
 }
 
-.active1{
-  background-color: palevioletred;
-  border-radius: 80%;
-}
 .sabemosTitulos {
   flex-wrap: wrap;
   flex-direction: row;
@@ -69,14 +65,14 @@ img.mqt {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  }
-  
-.navbar-nav{
+}
+
+.navbar-nav {
   margin-left: auto;
-  margin-top: 0px;
   padding-bottom: 0px;
-  margin-bottom: 150px;
-    }
+  margin-top: 0;
+  }
+
 
 .nav-link {
   font-size: 22px;
@@ -84,7 +80,7 @@ img.mqt {
   flex-flow: row;
   justify-content: center;
   font-family: "Special Elite", cursive;
-  text-align: justify;
+  text-align: center;
   }
   
 ul {
@@ -93,8 +89,7 @@ ul {
   margin-right: 30px;
   display: flex;
   list-style-type: none;
-  
-}
+  }
 
 li {
   display: inline-block;
@@ -102,7 +97,7 @@ li {
   position: relative;
   font-family: "Special Elite", cursive;
   text-transform: uppercase;
-}
+  }
 
 li a {
   text-decoration: none;
@@ -154,7 +149,7 @@ ul li:hover ul {
   background-image: linear-gradient(38deg, purple, sienna, royalblue, indianred);
   background-repeat: no-repeat;
   border: 7px double palevioletred;
-  border-radius: 20%;
+  border-radius: 5%;
   text-align: center;
   font-size: 20px;
   font-family: "Special Elite", cursive;
@@ -166,7 +161,7 @@ ul li:hover ul {
 }
 
 .penta {
-  border-radius: 20%;
+  border-radius: 5%;
   border: 3px palevioletred;
   filter: sepia(100%);
 }
@@ -180,7 +175,7 @@ ul li:hover ul {
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
   display: flex;
   border: 7px double yellow;
-  border-radius: 20%;
+  border-radius: 5%;
   text-align: center;
   font-size: 20px;
   display: inline-block;
@@ -194,7 +189,7 @@ ul li:hover ul {
   width: 480px;
   background-image: linear-gradient(38deg, purple, sienna, royalblue, indianred);
   border: 7px double yellow;
-  border-radius: 20%;
+  border-radius: 5%;
   text-align: center;
   font-size: 20px;
   font-family: "Special Elite", cursive;
@@ -204,7 +199,7 @@ ul li:hover ul {
 }
 
 .img-thumbnail {
-  border-radius: 20%;
+  border-radius: 5%;
   border: 3px palevioletred;
   width: 270px;
   height: 300px;
@@ -357,6 +352,7 @@ ul li:hover ul {
   margin-left: 10px;
   width: 400px;
   height: 600px;
+  border-radius: 5%;
   background-image: linear-gradient(38deg, purple, sienna, royalblue, indianred);
   padding: 10px;
   border: 9px double yellow;
@@ -377,6 +373,7 @@ ul li:hover ul {
   height: auto;
   padding: 10px;
   flex-wrap: wrap;
+  border-radius: 5%;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
   background-size: cover;
   border: 9px double yellow;
@@ -602,28 +599,38 @@ div.desc {
   background-repeat: no-repeat;
   background-size: cover;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
+  }
+  .bloqueClases{
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;   
+  }
+.container-fluid{
+  width: 100%;
+  }
+ 
 .armonizacion {
   height: 100px;
-  width: 420px;
+  width: 50%;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
-  margin: 30px;
-}
+  margin-top: 30px;
+  margin-left: 120px;
+  }
 
 .armo {
   font-size: 20px;
   font-family: "Special Elite", cursive;
   text-transform: uppercase;
-  color: palevioletred;
+  color: yellow;
 }
 
 .teoria {
   height: 100px;
-  width: 420px;
-  margin: 30px;
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 120px;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
 }
 
@@ -636,10 +643,11 @@ div.desc {
 
 .lectura {
   height: 100px;
-  width: 420px;
-  margin: 30px;
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 120px;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
-}
+  }
 
 .lec {
   font-size: 20px;
@@ -650,51 +658,40 @@ div.desc {
 
 .rocker {
   height: 100px;
-  width: 420px;
-  margin: 30px;
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 120px;
   background: linear-gradient(38deg, purple, sienna, royalblue, indianred);
-}
+ }
 
 .rock {
   font-size: 20px;
   font-family: "Special Elite", cursive;
   text-transform: uppercase;
-  color: palevioletred;
+  color: yellow;
+} 
+/*Video*/
+
+.v1-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  position: relative;
+     
 }
 
-/*Video*/
-/*.v1 {
-  height: 10px;
-  overflow: hidden;
-  padding-bottom: 330px;
-  padding-top: 30px;
-  padding-right: 0px;
-  width: 450px;
-  position: relative;
-  margin-left: 30px;
-  }
-
-.v1 iframe, .v1-responsive object, .v1-responsive embed {
-  height: 450px;
-  left: 0;
-  position: relative;
-  top: 0;
-  width: 420px;
-}*/
-.v1-responsive {
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	position: relative;
-	}
 .v1-responsive iframe, .v1-responsive object, .v1-responsive embed {
-	height: 80%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 80%;
-	}
+  height: 75%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 75%;
+  margin-left: 120px;
+  flex-direction: row;
+  border:2px double yellow;
+    
+}
 
 /*footer*/
 .footer {
